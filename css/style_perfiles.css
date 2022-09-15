@@ -1,0 +1,87 @@
+body {
+    background: #141414;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #6d6d6d;
+    opacity: 0;
+    animation: fade-in 500ms ease 200ms 1 forwards;
+}
+
+body h1 {
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+body a {
+    padding: 10px 15px;
+    color: #6d6d6d;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #6d6d6d;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+
+body a:hover {
+    color: #ebecec;
+    border: 1px solid #ebecec;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.logo {
+    width: 110px;
+    height: 30px;
+    margin: 15px 60px;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2000px-Netflix_2015_logo.svg.png");
+    background-size: cover;
+}
+
+.wrapper {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.profile {
+    width: 150px;
+}
+
+.profile-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    border: 6px solid #1f1f1f;
+    transition: all 300ms ease;
+}
+
+.profile-name {
+    margin: 20px 0;
+    line-height: 1.25em;
+    transition: all 300ms ease;
+}
+
+.profile:hover .profile-icon {
+    border: 6px solid #ebecec;
+}
+
+.profile:hover .profile-name {
+    color: #ebecec;
+}
